@@ -1,0 +1,24 @@
+*{
+    font-family: sans-serif;
+}
+header{
+    text-align: center;
+    margin-bottom: 0;
+}
+h1{
+    font-size: 50px;
+    text-align: center;
+    color: rgb(76, 114, 197);
+    margin-top: 0;
+}
+h2{
+    color: rgb(230, 89, 39);
+}
+footer{
+    text-align: center;
+    background-color: rgb(25, 25, 102);
+    color: white;
+    padding-top: 6px;
+    padding-bottom: 6px;
+    border: solid 3px rgb(109, 109, 197);
+}

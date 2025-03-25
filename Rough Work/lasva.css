@@ -3,3 +3,8 @@
 *{
   font-family: 'Poppins' sans-serif;
 }
+h1{
+  color: yellow;
+  background-color: orangered;
+  font-size: 20px;
+}

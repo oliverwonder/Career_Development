@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport", initial-scale=1.0">
+  <title>Input Methods</title>
+  <link rel="stylesheet" href="lasva.css">
+</head>
+<body>
+
+  <h1>Input Methods</h1>
+  <form action="#">
+
+    <label for="username">Enter your username:</label><br>
+    <input type="text" name="username" id="username" required>
+    <br><br>
+
+    <label for="email">Enter your email address:</label><br>
+    <input type="email" name="email" id="email" required>
+    <br><br>
+
+    <label for="password">Enter your password:</label><br>
+    <input type="password" name="password" id="password" required>
+    <br><br>
+
+
+    <p>Select your gender:</p>
+    <input type="radio" name="gender" value="male" id="opt-1">
+    <label for="opt-1">Male</label>
+    <br>
+
+    <input type="radio" name="gender" value="female" id="opt-2">
+    <label for="opt-2">Female</label>
+    <br>
+
+    <input type="radio" name="gender" value="other" id="opt-3">
+    <label for="opt-3">Other</label>
+    <br>
+
+    <label for="security-questions">Security Questions:</label><br>
+    <select name="security-questions" id="options">
+      <option value="opt-1">What is your age?</option>
+      <option value="opt-2">What is your favourite color?</option>
+      <option value="opt-3">What is your favourite drink?</option>
+      <option value="opt-4">What is your best experience?</option>
+      <option value="opt-5">What is your phone brand?</option>
+    </select>
+
+    <br><br>
+    <label for="security-answer">Security Answer:</label><br>
+    <input type="text" name="security-answer" id="security-answer">
+    <br><br>
+
+    <label for="comment">Enter your comment below:</label><br>
+    <textarea name="comment" id="comment" cols="30" rows="10" placeholder="    Comment..."></textarea>
+    <br><br>
+    <button type="submit">Submit Responses</button>
+    <br><br>
+    <abbr title="HyperText Markup Language">HTML</abbr>
+    <details>
+      <summary>How old our company is</summary>
+      <p>Our company is 10 years old</p>
+    </details>
+    <progress max="100" value="50"></progress>
+    <br><br>
+    <meter min="0" max="100" value="70" low="30" high="60" optimum="80"></meter>
+    <br><br>
+    <fieldset>
+      <legend>Password</legend>
+      <input type="password" name="password" id="password" required>
+    </fieldset>
+  </form>
+  
+</body>
+</html>

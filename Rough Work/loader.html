@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Loader</title>
+  <style>
+    *{
+      margin: 0;
+      padding: 0;
+      box-sizing: content-box;
+    }
+    body{
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+      background: #000;
+    }
+    .loader{
+      width: 75px;
+      height: 75px;
+      border-radius: 50%;
+      position: relative;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .circle{
+      width: 75px;
+      height: 75px;
+      border: 2px solid #1fd8d3;
+      position: absolute;
+      border-radius: 50%;
+      animation: animate 2s linear infinite;
+    }
+    .circle::before{
+      content: '';
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 18px;
+      height: 18px;
+      background-color: #66b6f8;
+      border-radius: 50%;
+    }
+    @keyframes animate {
+      to{
+        transform: rotate(0);
+      }
+      from{
+        transform: rotate(-360deg);
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="loader">
+    <div class="circle"></div>
+  </div>
+</body>
+</html>

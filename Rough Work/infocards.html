@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=`, initial-scale=1.0">
+  <title>Info Cards</title>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap");
+
+    *{
+      font-family: 'Poppins', sans-serif;
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    .container{
+      padding: 50px 0px;
+      height: 100vh;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+    }
+    .parent{
+      height: 400px;
+      width: 300px;
+      padding: 20px;
+      perspective: 1000px;
+    }
+    .card1{
+      padding-top: 100px;
+      transform-style: preserve-3d;
+      background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg? auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-position: center center;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+    }
+    .card1:hover{
+      background-position: 80% 20%;
+      transform: rotated3d(0.5, 1, 0, 30deg);
+    }
+    .card3{
+      filter: hue-rotate(300deg);
+      padding-top: 100px;
+      transform-style: preserve-3d;
+      background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg? auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-position: center center;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+    }
+    .card3:hover{
+      background-position: 80% 20%;
+      transform: rotated3d(0.5, 1, 0, 30deg);
+    }
+    .card2{
+      filter: hue-rotate(150deg);
+      padding-top: 100px;
+      transform-style: preserve-3d;
+      background-image: url("https://images.pexels.com/photos/1629236/pexels-photo-1629236.jpeg? auto=compress&cs=tinysrgb&w=1260&h=750&dpr=1");
+      background-position: center center;
+      width: 100%;
+      transition: all 0.5s ease-in-out;
+    }
+    .card2:hover{
+      background-position: 80% 20%;
+      transform: rotated3d(0.5, 1, 0, 30deg);
+    }
+    .content-box{
+      height: 100%;
+      width: 100%;
+      background-color: #000000cf;
+      border-radius: 0px 0px 10px 10px;
+      box-shadow: #0073ffec 0px 20px 50px -25px;
+      transition: all 0.5s ease-in-out;
+      padding: 50px 25px 25px 25px;
+      transform-style: preserve-3d;
+    }
+    .card-title{
+      color: white;
+      font-size: 25px;
+      font-weight: 900;
+      transition: all 0.5s ease-in-out;
+      transform: translate3d(0px, 0px, 20px);
+    }
+    .card-title:hover{
+      transform: translate3d(0px, 0px, 50px);
+    }
+    .card-content{
+      padding-top: 15px;
+      font-size: 12px;
+      color: #b9b9b9;
+      transition: all 0.5s ease-in-out;
+      transform: translate3d(0px, 0px, 20px);
+    }
+    .card-content:hover{
+      transform: translate3d(0px, 0px, 50px);
+    }
+    .see-more{
+      cursor: pointer;
+      background: none;
+      border: none;
+      font-weight: 900;
+      font-size: 11px;
+      text-transform: uppercase;
+      color: #0088ff;
+      padding-top: 15px;
+      transition: all 0.5s ease-in-out;
+      transform: translate3d(0px, 0px, 20px);
+    }
+    .see-more:hover{
+      transform: translate3d(0px, 0px, 50px);
+    }
+    .date-box{
+      position: absolute;
+      top: 75px;
+      left: 25px;
+      height: 60px;
+      width: 60px;
+      background-color: black;
+      border-radius: 10px;
+      padding: 10px;
+      box-shadow: #0066ff 0px 20px 60px 0px, #00c8ff 0px 18px 36px -18px;
+      transform: translate3d(0px, 0px, 50px);
+    }
+    .date-box span{
+      display: block;
+      text-align: center;
+    }
+    .date-box .month{
+      color: white;
+      font-size: 11px;
+      font-weight: 700;
+    }
+    .date-box .date{
+      color: #0088ff;
+      font-size: 20px;
+      font-weight: 900;
+    }
+    
+    
+  </style>
+</head>
+<body>
+  <div class="container">
+    <div class="parent">
+      <div class="card1">
+        <div class="content-box">
+          <h1 class="card-title">Card Title</h1>
+          <p class="card-content">Bouldering is a form of rock climbing that is performed on small rock formations or artificial rock walls without the use of ropes or harnesses. 
+          </p>
+          <button class="see-more">See More</button>
+        </div>
+        <div class="date-box">
+          <span class="month">Apr</span>
+          <span class="date">17</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="card2">
+        <div class="content-box">
+          <h1 class="card-title">Card Title</h1>
+          <p class="card-content">Bouldering is a form of rock climbing that is performed on small rock formations or artificial rock walls without the use of ropes or harnesses. 
+          </p>
+          <button class="see-more">See More</button>
+        </div>
+        <div class="date-box">
+          <span class="month">Apr</span>
+          <span class="date">18</span>
+        </div>
+      </div>
+    </div>
+
+    <div class="parent">
+      <div class="card3">
+        <div class="content-box">
+          <h1 class="card-title">Card Title</h1>
+          <p class="card-content">Bouldering is a form of rock climbing that is performed on small rock formations or artificial rock walls without the use of ropes or harnesses. 
+          </p>
+          <button class="see-more">See More</button>
+        </div>
+        <div class="date-box">
+          <span class="month">Apr</span>
+          <span class="date">19</span>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
+</html>

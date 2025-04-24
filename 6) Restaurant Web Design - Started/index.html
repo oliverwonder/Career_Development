@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Website</title>
+    <link rel="stylesheet" href="style.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    <script src="script.js" defer></script>
+    <script src="https://unpkg.com/scrollreveal"></script>
+</head>
+
+<body>
+
+    <!-- HEADER -->
+    <header class="header">
+        <h1 class="header__title">Resta<span>urant</span></h1>
+        <ul class="header__menus">
+            <li><a href="#home">Home</a></li>
+            <li><a href="#menus">Menus</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#services">Services</a></li>
+            <li><a href="#contacts">Contacts</a></li>
+        </ul>
+        <div class="header__menu-toggle">
+            <i class='bx bx-menu' ></i>
+            <i class='bx bx-x' ></i>
+        </div>
+    </header>
+
+    <!-- SECTION: HOME -->
+    <section id="home" class="section-home section-menu">
+        <div class="section-home__content">
+            <h1 class="section-home__title">Welcome to <span>Restaurant</span>, where flavour lives!</h1>
+            <div class="section-home__buttons">
+                <button class="primary-button">Contact Us</button>
+                <a href="#menus" class="light-button hover-icon-right">
+                    Explore
+                    <i class='bx bx-right-arrow-alt'></i>
+                </a>
+            </div>
+        </div>
+        <img class="section-home__image" src="images/pad-thai.png" alt="Pad Thai">
+    </section>
+    <!-- END SECTION: HOME -->
+
+    <!-- SECTION: MENUS -->
+    <section class="section-menus section-menu" id="menus">
+        <h1 class="section-title">Our <span>Menus</span></h1>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Cupiditate deleniti laudantium nam dolorum. Nemo tempora laborum possimus soluta id ex quis illo unde perspiciatis culpa.
+        </p>
+        <div class="section-menus__cards">
+            <!--Card1-->
+            <div class="section-menus__card">
+                <img class="section-menus__card-image" src="images/roasted-chicken.png" alt="Roasted Chicken">
+                <h3 class="section-menus__card-title">Roasted Chicken</h3>
+                <div class="section-menus__card-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <span>4.3</span>
+                </div>
+                <div class="section-menus__card-footer">
+                    <h2 class="section-menus__card-price">$3.90</h2>
+                    <button class="section-menus__card-button-buy primary-button">
+                        <i class='bx bxs-cart'></i>
+                    </button>
+                </div>
+            </div>
+            <!--Card2-->
+            <div class="section-menus__card">
+                <img class="section-menus__card-image" src="images/seafood-noodles.png" alt="Seafood Noodles">
+                <h3 class="section-menus__card-title">Seafood Noodles</h3>
+                <div class="section-menus__card-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <span>5.0</span>
+                </div>
+                <div class="section-menus__card-footer">
+                    <h2 class="section-menus__card-price">$4.90</h2>
+                    <button class="section-menus__card-button-buy primary-button">
+                        <i class='bx bxs-cart'></i>
+                    </button>
+                </div>
+            </div>
+            <!--Card3-->
+            <div class="section-menus__card">
+                <img class="section-menus__card-image" src="images/grilled-shrimp.png" alt="Grilled Shrimp">
+                <h3 class="section-menus__card-title">Grilled Shrimp</h3>
+                <div class="section-menus__card-rating">
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <i class='bx bxs-star'></i>
+                    <span>3.9</span>
+                </div>
+                <div class="section-menus__card-footer">
+                    <h2 class="section-menus__card-price">$7.49</h2>
+                    <button class="section-menus__card-button-buy primary-button">
+                        <i class='bx bxs-cart'></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- END SECTION: MENUS -->
+
+    <!-- SECTION: ABOUT -->
+    <section id="about" class="section-about section-menu">
+        <img class="section-about__image" src="images/pasta.png" alt="Pasta">
+        <div class="section-about__content">
+            <h1 class="section-title">About <span>Us</span></h1>
+            <p class="section-desc">
+                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nemo deleniti nobis fuga, itaque aliquam optio soluta accusamus magnam totam, tenetur ad est labore laudantium architecto id officiis, quae error maxime!
+            </p>
+            <div class="section-about__stats">
+                <div class="section-about__stat">
+                    <h1 class="section-about__stat-number">3+</h1>
+                    <div class="section-about__stat-text">
+                        <span class="section-about__stat-desc">Years of</span>
+                        <h3 class="section-about__stat-title">EXPERIENCE</h3>
+                    </div>
+                </div>
+                <div class="section-about__stat">
+                    <h1 class="section-about__stat-number">15</h1>
+                    <div class="section-about__stat-text">
+                        <span class="section-about__stat-desc">Best</span>
+                        <h3 class="section-about__stat-title">FOODS</h3>
+                    </div>
+                </div>
+            </div>
+            <button class="primary-button hover-icon-right">
+                Learn More 
+                <i class='bx bx-right-arrow-alt'></i>
+            </button>
+        </div>
+        <img class="section-about__image-background-1" src="images/seafood-noodles.png" alt="Seafood Noodles">
+        <img class="section-about__image-background-2" src="images/roasted-chicken.png" alt="Roasted Chicken">
+    </section>
+    <!-- END SECTION: ABOUT -->
+
+    <!-- SECTION: SERVICES -->
+    <section class="section-services section-menu" id="services">
+        <h1 class="section-title">Our <span>Services</span></h1>
+        <p class="section-desc">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Architecto, blanditiis! Fugiat doloremque, necessitatibus veritatis perferendis alias eaque adipisci dignissimos, eius recusandae, numquam expedita ad quia!
+        </p>
+        <div class="section-services__cards">
+            <div class="section-services__card">
+                <div class="section-services__card-icon">
+                    <i class='bx bx-bowl-hot'></i>
+                </div>
+                <h1 class="section-services__card-title">Dine-In Service</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tempore.</p>
+            </div>
+            <div class="section-services__card">
+                <div class="section-services__card-icon">
+                    <i class='bx bx-package' ></i>
+                </div>
+                <h1 class="section-services__card-title">Takeaway & Delivery</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tempore.</p>
+            </div>
+            <div class="section-services__card">
+                <div class="section-services__card-icon">
+                    <i class='bx bx-calendar-event' ></i>
+                </div>
+                <h1 class="section-services__card-title">Events & Catering</h1>
+                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, tempore.</p>
+            </div>
+        </div>
+    </section>
+    <!-- SECTION: END SERVICES -->
+
+    <!-- SECTION: CONTACT -->
+    <section class="section-contact section-menu" id="contacts">
+        <div class="section-contact__info">
+            <h1 class="section-title">Contact <span>Us</span></h1>
+            <p class="section-desc">
+                Lorem ipsum, dolor sit amet consectetur adipisicing elit. Iusto recusandae suscipit molestias accusamus architecto eum harum adipisci, ducimus, vitae sit iure autem pariatur exercitationem dolorem.
+            </p>
+            <div class="section-contact__info-items">
+                <div class="section-contact__info-item" >
+                    <div class="section-contact__info-item-icon">
+                        <i class='bx bxs-location-plus' ></i>
+                    </div>
+                    <a class="section-contact__info-item-link" href="#">
+                        Koromatangi Street, Lurambi, Kakamega, 40100, Kenya
+                    </a>
+                </div>
+                <div class="section-contact__info-item" >
+                    <div class="section-contact__info-item-icon">
+                        <i class='bx bxl-instagram' ></i>
+                    </div>
+                    <a class="section-contact__info-item-link" href="#">
+                        @ollie_155x
+                    </a>
+                </div>
+                <div class="section-contact__info-item" >
+                    <div class="section-contact__info-item-icon">
+                        <i class='bx bxl-whatsapp' ></i>
+                    </div>
+                    <a class="section-contact__info-item-link" href="#">
+                        https://wa.me/254794391090
+                    </a>
+                </div>
+            </div>
+        </div>
+        <form class="section-contact__form" action="#">
+            <input type="text" class="text-field" placeholder="Your Name" required>
+            <input type="email" class="text-field" placeholder="Email" required>
+            <input type="tel" class="text-field" placeholder="Phone Number" required>
+            <textarea class="text-field text-field--textarea" placeholder="Message..." rows="5"></textarea>
+            <button class="section-contact__form-button secondary-button">Send Message</button>
+        </form>
+    </section>
+    <!-- SECTION: END CONTACT -->
+
+    <!-- FOOTER -->
+    <footer class="footer">
+        <h1 class="footer-title">Resta<span>urant</span></h1>
+        <ul class="footer__menus">
+            <li class="footer_menus-menu"><a href="#home">Home</a></li>
+            <li class="footer_menus-menu"><a href="#menus">Menu</a></li>
+            <li class="footer_menus-menu"><a href="#about">About</a></li>
+            <li class="footer_menus-menu"><a href="#services">Services</a></li>
+            <li class="footer_menus-menu"><a href="#contacts">Contact</a></li>
+        </ul>
+        <div class="footer__divider"></div>
+        <p class="footer__copyright">
+            &copy; 2025 Restaurant. All rights reserved. | Crafted by Ollie Onedre
+        </p>
+    </footer>
+    <!-- END FOOTER -->
+
+</body>
+</html>
